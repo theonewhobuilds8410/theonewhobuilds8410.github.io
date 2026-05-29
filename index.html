@@ -1,1 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Allied Intelligence Machines</title>
 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:wght@300;400;500&family=JetBrains+Mono:wght@300;400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<div id="dot"></div>
+<div id="ring"></div>
+
+<nav>
+  <a href="#" class="logo">
+    <b>AIM</b>
+    <span></span>
+    <small>Allied Intelligence Machines</small>
+  </a>
+
+  <ul class="links">
+    <li><a href="#capabilities">Capabilities</a></li>
+    <li><a href="#divisions">Divisions</a></li>
+    <div class="division-panel" id="divisionPanel">
+
+  <div class="division-panel-top">
+    <small id="panelCode">DIV / 1</small>
+    <button id="closePanel">x</button>
+  </div>
+
+  <h3 id="panelTitle">Spectrum & Sensing</h3>
+
+  <p id="panelText">
+    Advanced spectrum surveillance, RF analysis, passive detection,
+    and distributed sensing systems designed for AGI training.
+  </p>
+
+</div>
+    <li><a href="#sectors">Sectors</a></li>
+    <li><a href="#mission">About</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+
+  <a href="#contact" class="btn">Engage</a>
+</nav>
+
+<section class="hero">
+  <div class="grid"></div>
+  <div class="fade"></div>
+
+  <div class="hero-content reveal">
+    <div class="kicker">
+      Advanced Systems - Signal Intelligence - Defence Technology
+    </div>
+
+    <h1>
+      Beyond the<br>
+      known <span>horizon.</span>
+    </h1>
+
+    <p>
+      Allied Intelligence Machines develops sensing, communications,
+      and intelligence systems for modern defence and strategic operations.
+    </p>
+
+    <div class="hero-actions">
+      <a href="#capabilities" class="btn">Our Capabilities</a>
+      <a href="#mission" class="text-btn">About AIM</a>
+    </div>
+  </div>
+</section>
+
+<section id="capabilities">
+  <div class="container">
+
+    <div class="label reveal">
+      01 · Core Capabilities
+    </div>
+
+    <div class="grid-3">
+
+      <div class="card reveal">
+        <div class="card-num">CAP-01</div>
+
+        <svg viewBox="0 0 28 28" fill="none">
+          <circle cx="14" cy="14" r="2" stroke="white" stroke-width=".9"/>
+          <circle cx="14" cy="14" r="6" stroke="white" stroke-width=".6" stroke-dasharray="2 2.5"/>
+          <circle cx="14" cy="14" r="10.5" stroke="white" stroke-width=".5" opacity=".5"/>
+        </svg>
+
+        <h3>RF Engineering</h3>
+
+        <p>
+          Wideband antenna systems, SDR platforms, and signal analysis
+          across the electromagnetic spectrum.
+        </p>
+      </div>
+
+      <div class="card reveal">
+        <div class="card-num">CAP-02</div>
+
+        <svg viewBox="0 0 28 28" fill="none">
+          <rect x="3" y="7" width="22" height="14" stroke="white" stroke-width=".9"/>
+        </svg>
+
+        <h3>ISR Systems</h3>
+
+        <p>
+          Multi-modal surveillance and reconnaissance systems with
+          real-time sensor fusion and tracking.
+        </p>
+      </div>
+
+      <div class="card reveal">
+        <div class="card-num">CAP-03</div>
+
+        <svg viewBox="0 0 28 28" fill="none">
+          <path d="M14 3 L25 25 L14 20 L3 25 Z" stroke="white" stroke-width=".9"/>
+        </svg>
+
+        <h3>Secure Communications</h3>
+
+        <p>
+          Encrypted tactical networking and resilient communication
+          systems for contested environments.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="mission">
+  <div class="container mission">
+
+    <div class="reveal">
+      <h2>
+        Why we<br>
+        <span>work.</span>
+      </h2>
+
+      <div class="stats">
+        <div>
+          <strong>2</strong>
+          <span>Years fully Operational</span>
+        </div>
+
+        <div>
+          <strong>120</strong>
+          <span>Billion parameters on our AI models.</span>
+        </div>
+
+        <div>
+          <strong>10</strong>
+          <span>iLO-7 Powered servers.</span>
+        </div>
+
+        <div>
+          <strong>4</strong>
+          <span>Technical Divisions</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="reveal">
+      <p>
+        Allied Intelligence Machines was founded in 2024 to bridge
+        the gap between raw signal intelligence and operational decision making.
+      </p>
+
+      <p>
+        AIM develops systems that allow operations in uncertain conditions.
+      </p>
+
+      <p>
+        We specialize in spectrum systems, communications,
+        sensing infrastructure, and advanced intelligence architecture.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<div class="divisions reveal">
+
+  <div class="division"
+       data-code="DIV / 1"
+       data-title="Spectrum & Sensing"
+       data-text="Advanced spectrum surveillance, RF analysis, passive detection, and distributed sensing systems designed for straight-forward AGI training.">
+    <small>DIV / 1</small>
+    <h3>Spectrum & Sensing</h3>
+    <span>→</span>
+  </div>
+
+  <div class="division"
+       data-code="DIV / 2"
+       data-title="Communications"
+       data-text="Encrypted communications, resilient mesh networking, and long range LoRa comms.">
+    <small>DIV / 2</small>
+    <h3>Communications</h3>
+    <span>→</span>
+  </div>
+
+  <div class="division"
+       data-code="DIV / 3"
+       data-title="Electronic Systems"
+       data-text="Electronic attack, countermeasure systems, signal disruption, and spectrum denial technologies for pentesting.">
+    <small>DIV / 3</small>
+    <h3>Electronic Systems</h3>
+    <span>→</span>
+  </div>
+
+  <div class="division"
+       data-code="DIV / 4"
+       data-title="Space & Ground Systems"
+       data-text="Integrated orbital and terrestrial systems including sensor uplinks, autonomous infrastructure, and hardened deployment platforms.">
+    <small>DIV / 4</small>
+    <h3>Space & Ground Systems</h3>
+    <span>→</span>
+  </div>
+
+</div>
+</section>
+
+<div class="notice reveal">
+
+  <div class="notice-icon">
+    ⚠
+  </div>
+
+  <div>
+    <h4>Security Notice</h4>
+
+    <p>
+      Certain capabilities and technical specifications referenced on this
+      site may be subject to export control and clearance restrictions.
+    </p>
+  </div>
+
+</div>
+
+<section id="sectors">
+  <div class="container">
+
+    <div class="label reveal">
+      04 · Sectors Served
+    </div>
+
+    <div class="grid-4 reveal">
+
+      <div class="sector">
+        <div class="sector-tag">SEC-01</div>
+        <h4>Radio Comms Division</h4>
+      </div>
+
+      <div class="sector">
+        <div class="sector-tag">SEC-02</div>
+        <h4>Ground Robotics Division</h4>
+      </div>
+
+      <div class="sector">
+        <div class="sector-tag">SEC-03</div>
+        <h4>Intelligence Division</h4>
+      </div>
+
+      <div class="sector">
+        <div class="sector-tag">SEC-04</div>
+        <h4>Thrust Vectoring Division</h4>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<section id="contact">
+  <div class="container contact">
+
+    <div class="reveal">
+      <h2>
+        Contact<br>
+        us.
+      </h2>
+
+      <p>
+        AIM maintains a dedicated intake process for strategic
+        partnerships.
+      </p>
+    </div>
+
+    <form class="reveal">
+
+      <div class="row">
+
+        <div class="field">
+          <label>Given Name</label>
+          <input type="text">
+        </div>
+
+        <div class="field">
+          <label>Surname</label>
+          <input type="text">
+        </div>
+
+      </div>
+
+      <div class="field">
+        <label>Organization</label>
+        <input type="text">
+      </div>
+
+      <div class="field">
+        <label>Official Email</label>
+        <input type="email">
+      </div>
+
+      <div class="field">
+        <label>Nature of Enquiry</label>
+
+        <select>
+          <option>Program Support</option>
+          <option>Technical Evaluation</option>
+          <option>Partnerships</option>
+          <option>Other</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label>Brief Description</label>
+        <textarea placeholder="Provide a brief summary..."></textarea>
+      </div>
+
+      <button class="btn">
+        Submit Enquiry
+      </button>
+
+    </form>
+
+  </div>
+</section>
+
+<footer>
+
+  <strong>AIM</strong>
+
+  <p>
+    © 2026 Allied Intelligence Machines 
+  </p>
+
+  <ul>
+    <li><a href="#">Privacy</a></li>
+    <li><a href="#">Legal</a></li>
+    <li><a href="#">Careers</a></li>
+  </ul>
+
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
