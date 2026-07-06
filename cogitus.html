@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Cogitus - Allied Intelligence Machines</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:wght@300;400;500&family=JetBrains+Mono:wght@300;400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="cogitus.css">
+</head>
+
+<body>
+
+<div id="dot"></div>
+<div id="ring"></div>
+
+<nav>
+  <a href="index.html" class="logo">
+    <b>AIM</b>
+    <span></span>
+    <small>Allied Intelligence Machines</small>
+  </a>
+
+  <ul class="links">
+    <li><a href="index.html#capabilities">Work</a></li>
+    <li><a href="index.html#divisions">Divisions</a></li>
+    <li><a href="index.html#sectors">Projects</a></li>
+    <li><a href="index.html#mission">About</a></li>
+    <li><a href="cogitus.html" style="color:var(--text)">Cogitus</a></li>
+    <li><a href="index.html#contact">Contact</a></li>
+  </ul>
+
+  <a href="index.html#contact" class="btn">Get in Touch</a>
+</nav>
+
+<section class="cog-hero">
+
+  <div class="cog-hero-text reveal">
+
+    <div class="cog-dev-badge">
+      <span class="cog-badge-dot"></span>
+      Under Active Development
+    </div>
+
+    <div class="kicker" style="margin-top:18px;">
+      AI-Powered Humanoid
+    </div>
+
+    <h1 class="cog-title">
+      COGITUS
+    </h1>
+
+    <p class="cog-subtitle">
+      <em>cogitus</em> · Latin for "thought"
+    </p>
+
+    <p class="cog-desc">
+      A humanoid robot platform built from scratch.
+      Designed to think, move, and adapt in unstructured environments.
+    </p>
+
+  </div>
+
+  <div class="cog-image-wrap reveal">
+    <img
+      src="assets/cogitus_render01.png"
+      alt="Cogitus humanoid robot, 3D CAD rendering"
+      class="cog-image"
+    />
+    <div class="cog-image-fade"></div>
+  </div>
+
+  <p class="cog-render-note reveal">
+    Rendered image is a 3D CAD concept. Not a physical product.
+  </p>
+
+</section>
+
+<section class="cog-stats-section">
+  <div class="container">
+
+    <div class="label reveal">
+      01 - Project Overview
+    </div>
+
+    <div class="cog-stats reveal">
+
+      <div class="cog-stat">
+        <strong>TBD</strong>
+        <span>Height</span>
+      </div>
+
+      <div class="cog-stat">
+        <strong>TBD</strong>
+        <span>Weight</span>
+      </div>
+
+      <div class="cog-stat">
+        <strong>Edge AI</strong>
+        <span>Compute Platform</span>
+      </div>
+
+      <div class="cog-stat">
+        <strong>Active</strong>
+        <span>Development Status</span>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<section>
+  <div class="container">
+
+    <div class="label reveal">
+      02 - Planned Capabilities
+    </div>
+
+    <div class="grid-3">
+
+      <div class="card reveal">
+        <div class="card-num">COG-01</div>
+
+        <svg viewBox="0 0 28 28" fill="none">
+          <circle cx="14" cy="10" r="5" stroke="white" stroke-width=".9"/>
+          <path d="M6 24 C6 18 22 18 22 24" stroke="white" stroke-width=".9"/>
+        </svg>
+
+        <h3>Autonomous Navigation</h3>
+
+        <p>
+          Real-time environment mapping and path planning using onboard
+          vision and depth sensing. 
+        </p>
+      </div>
+
+      <div class="card reveal">
+        <div class="card-num">COG-02</div>
+
+        <svg viewBox="0 0 28 28" fill="none">
+          <rect x="9" y="4" width="10" height="8" rx="1" stroke="white" stroke-width=".9"/>
+          <path d="M14 12 L14 20" stroke="white" stroke-width=".9"/>
+          <path d="M8 15 L14 15 M14 15 L20 15" stroke="white" stroke-width=".9"/>
+          <path d="M8 15 L6 22 M20 15 L22 22" stroke="white" stroke-width=".9"/>
+        </svg>
+
+        <h3>Bipedal Locomotion</h3>
+
+        <p>
+          Dynamic balance and gait control across varied terrain.
+          Custom actuator design, early prototyping stage.
+        </p>
+      </div>
+
+      <div class="card reveal">
+        <div class="card-num">COG-03</div>
+
+        <svg viewBox="0 0 28 28" fill="none">
+          <circle cx="14" cy="14" r="2" stroke="white" stroke-width=".9"/>
+          <circle cx="14" cy="14" r="6" stroke="white" stroke-width=".6" stroke-dasharray="2 2.5"/>
+          <circle cx="14" cy="14" r="10.5" stroke="white" stroke-width=".5" opacity=".5"/>
+        </svg>
+
+        <h3>Onboard Intelligence</h3>
+
+        <p>
+          Local language model and vision processing running entirely
+          on-device. No cloud dependency. Architecture TBD.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+
+    <div class="label reveal">
+      03 · Development Phases
+    </div>
+
+    <div class="divisions reveal">
+
+      <div class="division cog-phase cog-phase--done">
+        <small>PHASE / 1</small>
+        <h3>Concept & CAD Design</h3>
+        <span class="cog-phase-status">Complete</span>
+      </div>
+
+      <div class="division cog-phase cog-phase--active">
+        <small>PHASE / 2</small>
+        <h3>Actuator & Chassis Prototyping</h3>
+        <span class="cog-phase-status cog-phase-status--active">In Progress</span>
+      </div>
+
+      <div class="division cog-phase">
+        <small>PHASE / 3</small>
+        <h3>Electronics & Compute Integration</h3>
+        <span class="cog-phase-status cog-phase-status--pending">Pending</span>
+      </div>
+
+      <div class="division cog-phase">
+        <small>PHASE / 4</small>
+        <h3>AI Software Stack</h3>
+        <span class="cog-phase-status cog-phase-status--pending">Pending</span>
+      </div>
+
+      <div class="division cog-phase">
+        <small>PHASE / 5</small>
+        <h3>Deployment</h3>
+        <span class="cog-phase-status cog-phase-status--pending">Pending</span>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+<div class="notice reveal" style="margin-bottom:0;">
+
+  <div class="notice-icon" style="font-size:16px;">
+    ℹ
+  </div>
+
+  <div>
+    <h4>Work in Progress</h4>
+
+    <p>
+      Cogitus is an ongoing personal research project. All specifications,
+      renders, and timelines are preliminary. The image shown is a 3D CAD
+      concept render and does not represent a finished or functional product.
+    </p>
+  </div>
+
+</div>
+
+<footer>
+
+  <strong>AIM</strong>
+
+  <p>
+    © 2026 Allied Intelligence Machines · Cogitus Project
+  </p>
+
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="index.html#contact">Contact</a></li>
+  </ul>
+
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
