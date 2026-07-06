@@ -1,44 +1,5 @@
 const dot = document.getElementById("dot");
 const ring = document.getElementById("ring");
-const divisions = document.querySelectorAll(".division");
-
-const panel = document.getElementById("divisionPanel");
-const panelCode = document.getElementById("panelCode");
-const panelTitle = document.getElementById("panelTitle");
-const panelText = document.getElementById("panelText");
-const closePanel = document.getElementById("closePanel");
-
-divisions.forEach(div => {
-
-  div.addEventListener("click", () => {
-
-    divisions.forEach(d => d.classList.remove("active"));
-
-    div.classList.add("active");
-
-    panelCode.textContent = div.dataset.code;
-    panelTitle.textContent = div.dataset.title;
-    panelText.textContent = div.dataset.text;
-
-    panel.classList.add("active");
-    setTimeout(() => {
-  panel.scrollIntoView({
-    behavior: "smooth",
-    block: "nearest"
-    });
-    }, 120);
-
-  });
-
-});
-
-closePanel.addEventListener("click", () => {
-
-  panel.classList.remove("active");
-
-  divisions.forEach(d => d.classList.remove("active"));
-
-});
 
 let x = 0;
 let y = 0;
