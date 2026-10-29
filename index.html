@@ -1,356 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Allied Intelligence Machines</title>
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:wght@300;400;500&family=JetBrains+Mono:wght@300;400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css">
-</head>
-
-<body>
-
-<div id="dot"></div>
-<div id="ring"></div>
-
-<nav>
-  <a href="index.html" class="logo">
-    <b>AIM</b>
-    <span></span>
-    <small>Allied Intelligence Machines</small>
-  </a>
-
-  <ul class="links">
-    <li><a href="#capabilities">Work</a></li>
-    <li><a href="#divisions">Divisions</a></li>
-    <li><a href="#sectors">Projects</a></li>
-    <li><a href="#mission">About</a></li>
-    <li><a href="cogitus.html">Cogitus</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
-
-  <a href="#contact" class="btn">Get in Touch</a>
-</nav>
-
-<section class="hero">
-  <div class="grid"></div>
-  <div class="fade"></div>
-
-  <div class="hero-content reveal">
-    <div class="kicker">
-      Robotics · Autonomous Drones · Artificial Intelligence
-    </div>
-
-    <h1>
-      Build first,<br>
-      ask later.<span> </span>
-    </h1>
-
-    <p>
-      Allied Intelligence Machines is an independent lab building
-      robots, drones, and AI systems.
-    </p>
-
-    <div class="hero-actions">
-      <a href="#capabilities" class="btn">What We Build</a>
-      <a href="#mission" class="text-btn">About AIM</a>
-    </div>
-  </div>
-</section>
-
-<section id="capabilities">
-  <div class="container">
-
-    <div class="label reveal">
-      01 · What We Build
-    </div>
-
-    <div class="grid-3">
-
-      <div class="card reveal">
-        <div class="card-num">CAP-01</div>
-
-        <svg viewBox="0 0 28 28" fill="none">
-          <circle cx="14" cy="14" r="2" stroke="white" stroke-width=".9"/>
-          <circle cx="14" cy="14" r="6" stroke="white" stroke-width=".6" stroke-dasharray="2 2.5"/>
-          <circle cx="14" cy="14" r="10.5" stroke="white" stroke-width=".5" opacity=".5"/>
-        </svg>
-
-        <h3>RF & Wireless</h3>
-
-        <p>
-          Antenna design, software defined radio, and custom wireless
-          links for remote and autonomous systems.
-        </p>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#10191c" />
+    <meta name="description" content="Levi Krejci, Amateur Radio Operator KJ5OBC, UAV enthusiast, and 3D printing designer. Explore current builds and technical interests." />
+    <script src="script.js" defer></script>
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Levi Krejci, Radio, UAVs & 3D Design" />
+    <meta property="og:description" content="amateur radio, unmanned aircraft, and practical 3D-printed designs by Levi Krejci." />
+    <meta property="og:image" content="og-image.svg" />
+    <meta property="og:image:alt" content="Levi Krejci portfolio card with radio, UAV, and 3D design specialties." />
+    <title>Portfolio</title>
+    <link rel="icon" type="image/svg+xml" href="favicon-light.svg" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="#top" aria-label="Levi Krejci, home">
+        </a>
+        <button class="theme-toggle" type="button" aria-label="Switch to dark mode" title="Switch to dark mode">
+          <svg class="theme-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <circle class="sun-core" cx="12" cy="12" r="4" />
+            <path class="sun-rays" d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42" />
+            <path class="moon-shape" d="M20.2 15.2A8.5 8.5 0 0 1 8.8 3.8 8.6 8.6 0 1 0 20.2 15.2Z" />
+          </svg>
+        </button>
+        <details class="contact-menu">
+          <summary>Contact</summary>
+          <div class="contact-popup">
+            <p>Email</p>
+            <a href="mailto:your-email@example.com">lekrejci312@gmail.com</a>
+          </div>
+        </details>
       </div>
+    </header>
 
-      <div class="card reveal">
-        <div class="card-num">CAP-02</div>
-
-        <svg viewBox="0 0 28 28" fill="none">
-          <path d="M14 5 L23 19 H5 Z" stroke="white" stroke-width=".9"/>
-          <line x1="14" y1="19" x2="14" y2="24" stroke="white" stroke-width=".9"/>
-          <line x1="10" y1="24" x2="18" y2="24" stroke="white" stroke-width=".9"/>
-        </svg>
-
-        <h3>Autonomous Drones</h3>
-
-        <p>
-          Fixed wing and multirotor platforms with onboard compute,
-          custom flight controllers, and computer vision.
-        </p>
-      </div>
-
-      <div class="card reveal">
-        <div class="card-num">CAP-03</div>
-
-        <svg viewBox="0 0 28 28" fill="none">
-          <rect x="6" y="8" width="16" height="12" rx="1.5" stroke="white" stroke-width=".9"/>
-          <circle cx="10" cy="14" r="1.5" stroke="white" stroke-width=".7"/>
-          <circle cx="14" cy="14" r="1.5" stroke="white" stroke-width=".7"/>
-          <circle cx="18" cy="14" r="1.5" stroke="white" stroke-width=".7"/>
-        </svg>
-
-        <h3>AI & Machine Learning</h3>
-
-        <p>
-          Edge inference, computer vision, and neural network research
-          running on custom built hardware.
-        </p>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<section id="mission">
-  <div class="container mission">
-
-    <div class="reveal">
-      <h2>
-        Why we<br>
-        <span>build.</span>
-      </h2>
-
-      <div class="stats">
-        <div>
-          <strong>2+</strong>
-          <span>Years of active builds</span>
+    <main id="main">
+      <section class="hero page-shell" id="top" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow">Austin, TX, USA</p>
+          <h1 id="hero-title">Levi <span>Krejci</span></h1>
+          <p class="hero-subtitle">Amatuer Radio Operator (KJ5OBC), UAV Enthusiast, CAD Designer, Neural Network Attempter.</p>
+          <p class="hero-intro">I enjoy making interactive demos for projects with Arduinos, Raspberry Pis, and ESP-32s. I especially love working with SDRs and wiring up a project after I build it. To pass time between projects, I like to build model aircraft, and play Kerbal Space Program.</p>
+          <a class="text-link" href="#projects">Explore current projects</a>
         </div>
+      </section>
 
-        <div>
-          <strong>4</strong>
-          <span>Technical Divisions</span>
+      <section class="content-section page-shell" id="about" aria-labelledby="about-title">
+        <div class="section-heading">
+          <h2 id="about-title">How I got here.</h2>
         </div>
-
-        <div>
-          <strong>100%</strong>
-          <span>Independent & self-funded</span>
+        <div class="about-layout">
+          <div class="about-copy">
+            <p>I first got interested in Amateur Radio when my friend told me that the best high school in my city had a radio club, I had previously gotten a book on how to get my license, so I studied, I actually found the whole thing pretty interesting, and now I am currently learning about HF propogation, Antenna Engineering, and studying for my General License.</p>
+          <div class="interest-list" aria-label="Areas of interest">
+            <article class="interest-item">
+              <div><h3>Amateur radio</h3><p>Licensed operator <strong>KJ5OBC</strong></p></div>
+            </article>
+            <article class="interest-item">
+              <div><h3>Unmanned Aerial Vehicles</h3><p>Fixed Wing EDFs and Experimenting with tilt rotor mechanics.</p></div>
+            </article>
+            <article class="interest-item">
+              <div><h3>Neural Networks</h3><p>Currently laying out architecture for an AI powered study app.</p></div>
+            </article>
+          </div>
         </div>
-      </div>
-    </div>
+      </section>
 
-    <div class="reveal">
-      <p>
-        AIM started as a personal project and grew into a small independent
-        lab. Everything here is designed, built, and tested by hand.
-      </p>
-
-      <p>
-        The focus is on making things that actually work: robots that move,
-        drones that fly, and AI that runs on hardware we built ourselves.
-      </p>
-
-      <p>
-        No VC funding. No corporate roadmap. Just people and actuators 
-      </p>
-  </div>
-</section>
-
-<section id="divisions">
-  <div class="container">
-
-    <div class="label reveal">
-      03 · Technical Divisions
-    </div>
-
-    <div class="divisions reveal">
-
-      <div class="division" data-title="Robotics & Mechatronics" data-desc="Custom-built robot platforms, actuator systems, and mechanical assemblies. From servo-driven arms to full bipedal frames like Cogitus.">
-        <small>DIV / 1</small>
-        <h3>Robotics & Mechatronics</h3>
-        <span>→</span>
-      </div>
-
-      <div class="division" data-title="Autonomous Aviation" data-desc="Fixed-wing and multirotor UAV platforms with onboard compute, custom flight controllers, and real-time computer vision for autonomous navigation.">
-        <small>DIV / 2</small>
-        <h3>Autonomous Aviation</h3>
-        <span>→</span>
-      </div>
-
-      <div class="division" data-title="Artificial Intelligence" data-desc="Edge inference, model training, and computer vision research running entirely on custom hardware. No cloud dependency. Built to run in the real world.">
-        <small>DIV / 3</small>
-        <h3>Artificial Intelligence</h3>
-        <span>→</span>
-      </div>
-
-      <div class="division" data-title="RF & Embedded Systems" data-desc="Software-defined radio, antenna design, custom wireless links, and low-level firmware for microcontrollers and single-board computers.">
-        <small>DIV / 4</small>
-        <h3>RF & Embedded Systems</h3>
-        <span>→</span>
-      </div>
-
-    </div>
-
-  </div>
-</section>
-
-<section id="sectors">
-  <div class="container">
-
-    <div class="label reveal">
-      04 · Active Projects
-    </div>
-
-    <div class="grid-4 reveal">
-
-      <a href="cogitus.html" class="sector" style="text-decoration:none;color:inherit;display:block;">
-        <div class="sector-tag">PRJ-01</div>
-        <h4>Cogitus Humanoid ↗</h4>
-      </a>
-
-      <div class="sector">
-        <div class="sector-tag">PRJ-02</div>
-        <h4>Fixed-Wing UAV Platform</h4>
-      </div>
-
-      <div class="sector">
-        <div class="sector-tag">PRJ-03</div>
-        <h4>Edge AI Inference Board</h4>
-      </div>
-
-      <div class="sector">
-        <div class="sector-tag">PRJ-04</div>
-        <h4>SDR Ground Station</h4>
-      </div>
-
-    </div>
-
-  </div>
-</section>
-
-<section id="contact">
-  <div class="container contact">
-
-    <div class="reveal">
-      <h2>
-        Say<br>
-        hello.
-      </h2>
-
-      <p>
-        Interested in collaborating, following the work, or just
-        want to talk shop? Reach out.
-      </p>
-    </div>
-
-    <form class="reveal">
-
-      <div class="row">
-
-        <div class="field">
-          <label for="fname">First Name</label>
-          <input id="fname" type="text">
+      <section class="content-section projects-section page-shell" id="projects" aria-labelledby="projects-title">
+        <div class="section-heading projects-heading">
+          <p class="section-note">a small collection of ideas moving from east to west.</p>
         </div>
-
-        <div class="field">
-          <label for="lname">Last Name</label>
-          <input id="lname" type="text">
+        <div class="project-grid">
+          <article class="project-card">
+            <div class="project-visual visual-flight">
+              <img class="project-image" src="images/uav-project.jpg" alt="no image yet, check back later!" onerror="this.hidden = true" />
+            </div>
+            <div class="project-body">
+              <h3>Airframe experiments</h3>
+              <p>I have designed multiple Fixed Wing UAVs in CAD, in addition to one Tilt Rotor UAV. I have printed one of the Fixed Wings, however have since abandoned the project because of the funding needed.</p>
+            </div>
+          </article>
+          <article class="project-card">
+            <div class="project-visual visual-print">
+              <img class="project-image" src="images/IMG_1011_30.jpeg" alt="Aircraft shown in the aircraft project" onerror="this.hidden = true" />
+            </div>
+            <div class="project-body">
+              <h3>Mid 20th Century Aircraft</h3>
+              <p>I have some ELITE ball knowledge on WW2, and I love visiting museums with aircraft from that (and the korean war) era. I have a special interest in the Horten Ho229, an unfinished prototype for a flying wing design. (the plane pictured above is NOT a 229, it is an F-84E (used in the korean war).)</p>
+            </div>
+          </article>
+          <article class="project-card">
+            <div class="project-visual visual-radio">
+              <img class="project-image" src="images/IMG_2038_30.jpeg" alt="amateur radio station setup" onerror="this.hidden = true" />
+            </div>
+            <div class="project-body">
+              <h3>Radio</h3>
+              <p>I currently operate on a Kenwood TS-440s from the LASA ARC, K5LBJ. I have a homemade 10m dipole I set up to recieve 28.4MHz for SSB, CW, and SSTV (sstvs my fav frfr 🥹). I currently use it for stationary use at home and am in the process of building a radio from scratch for portable use (specifically POTA)</p>
+            </div>
+          </article>
+          <article class="project-card">
+            <div class="project-visual visual-radio">
+              <img class="project-image" src="images/cad.jpg" alt="amateur radio station setup" onerror="this.hidden = true" />
+            </div>
+            <div class="project-body">
+              <h3>CAD</h3>
+              <p>I design many parts in OnShape to provide elegant solutions to problems, such as this camera cover for my dad's iPad. I also enjoy spending time browsing MakerWorld, Printables, and Thingiverse for fun prints to make to pass time.</p>
+            </div>
+          </article>
         </div>
+      </section>
+    </main>
 
+    <footer class="site-footer">
+      <div class="footer-inner page-shell">
+        <a class="back-to-top" href="#top">Back to top</a>
       </div>
-
-      <div class="field">
-        <label for="email">Email</label>
-        <input id="email" type="email">
-      </div>
-
-      <div class="field">
-        <label for="topic">What's on your mind?</label>
-
-        <select id="topic">
-          <option>Collaboration</option>
-          <option>Technical Questions</option>
-          <option>Just saying hi</option>
-          <option>Other</option>
-        </select>
-      </div>
-
-      <div class="field">
-        <label for="message">Message</label>
-        <textarea id="message" placeholder="Tell us what you're thinking..."></textarea>
-      </div>
-
-      <button class="btn">
-        Send Message
-      </button>
-
-    </form>
-
-  </div>
-</section>
-
-<footer>
-
-  <strong>AIM</strong>
-
-  <p>
-    © 2026 Allied Intelligence Machines 
-  </p>
-
-  <ul>
-    <li><a href="#">Privacy</a></li>
-    <li><a href="cogitus.html">Cogitus</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
-
-</footer>
-<div id="div-popup" class="div-popup-overlay">
-  <div class="div-popup-box">
-    <div class="div-popup-close">×</div>
-    <small class="div-popup-label">Technical Division</small>
-    <h3 class="div-popup-title"></h3>
-    <p class="div-popup-desc"></p>
-  </div>
-</div>
-
-<script src="script.js"></script>
-<script>
-(function(){
-  const overlay = document.getElementById('div-popup');
-  const title   = overlay.querySelector('.div-popup-title');
-  const desc    = overlay.querySelector('.div-popup-desc');
-
-  document.querySelectorAll('.division[data-desc]').forEach(function(el){
-    el.addEventListener('click', function(){
-      title.textContent = el.dataset.title;
-      desc.textContent  = el.dataset.desc;
-      overlay.classList.add('open');
-    });
-  });
-
-  overlay.addEventListener('click', function(e){
-    if(e.target === overlay) overlay.classList.remove('open');
-  });
-  overlay.querySelector('.div-popup-close').addEventListener('click', function(){
-    overlay.classList.remove('open');
-  });
-  document.addEventListener('keydown', function(e){
-    if(e.key === 'Escape') overlay.classList.remove('open');
-  });
-})();
-</script>
-</body>
+    </footer>
+  </body>
 </html>
