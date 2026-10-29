@@ -1,39 +1,36 @@
-const dot = document.getElementById("dot");
-const ring = document.getElementById("ring");
+const themeToggle = document.querySelector(".theme-toggle");
+const savedTheme = localStorage.getItem("theme");
+const prefersDark = window.matchMedia("(prefers-color-scheme: dark)");
 
-let x = 0;
-let y = 0;
-let rx = 0;
-let ry = 0;
+const favicon = document.querySelector('link[rel="icon"]');
 
-document.addEventListener("mousemove", e => {
-  x = e.clientX;
-  y = e.clientY;
+function applyTheme(theme) {
+  document.documentElement.dataset.theme = theme;
+  const nextTheme = theme === "dark" ? "light" : "dark";
+  themeToggle.setAttribute("aria-label", `Switch to ${nextTheme} mode`);
+  themeToggle.title = `Switch to ${nextTheme} mode`;
+  favicon.href = theme === "dark" ? "favicon-dark.svg" : "favicon-light.svg";
+}
 
-  dot.style.left = x + "px";
-  dot.style.top = y + "px";
+function transitionTheme(theme) {
+  const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  if (document.startViewTransition && !reduceMotion) {
+    document.startViewTransition(() => applyTheme(theme));
+  } else {
+    applyTheme(theme);
+  }
+}
+
+applyTheme(savedTheme || (prefersDark.matches ? "dark" : "light"));
+
+themeToggle.addEventListener("click", () => {
+  const nextTheme = document.documentElement.dataset.theme === "dark" ? "light" : "dark";
+  localStorage.setItem("theme", nextTheme);
+  transitionTheme(nextTheme);
 });
 
-(function animate(){
-  rx += (x - rx) * .1;
-  ry += (y - ry) * .1;
-
-  ring.style.left = rx + "px";
-  ring.style.top = ry + "px";
-
-  requestAnimationFrame(animate);
-})();
-
-const observer = new IntersectionObserver(entries => {
-  entries.forEach(entry => {
-    if(entry.isIntersecting){
-      entry.target.classList.add("show");
-    }
-  });
-},{
-  threshold:.1
+prefersDark.addEventListener("change", (event) => {
+  if (!localStorage.getItem("theme")) {
+    transitionTheme(event.matches ? "dark" : "light");
+  }
 });
-
-document
-  .querySelectorAll(".reveal")
-  .forEach(el => observer.observe(el));
