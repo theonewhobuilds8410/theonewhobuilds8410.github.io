@@ -393,6 +393,8 @@ async function loadSplatScene(src) {
       lod: true
     });
 
+    splats.rotation.x = Math.PI;
+
     scene.add(splats);
 
     await splats.initialized;
