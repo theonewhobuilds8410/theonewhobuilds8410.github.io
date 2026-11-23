@@ -1,39 +1,14 @@
-{
-  "albums": [
-    {
-      "id": "paris",
-      "title": "Paris",
-      "location": "Paris, France",
-      "count": "248 photos",
-      "cover": "photos/paris-cover.jpg",
-      "items": []
-    },
-    {
-      "id": "switzerland",
-      "title": "Switzerland",
-      "location": "Switzerland",
-      "count": "176 photos",
-      "cover": "photos/switzerland-cover.jpg",
-      "items": []
-    },
-    {
-      "id": "france",
-      "title": "France",
-      "location": "France",
-      "count": "129 photos",
-      "cover": "photos/france-cover.jpg",
-      "items": []
-    },
-    {
-      "id": "italy",
-      "title": "Italy",
-      "location": "Italy",
-      "count": "213 photos",
-      "cover": "photos/italy-cover.jpg",
-      "items": []
-    }
-  ],
-  "photos": [],
-  "videos": [],
-  "gaussians": []
-}
+"gaussians": [
+  {
+    "title": "La France Victorieuse",
+    "src": "gaussians/paris/victorieuse.ply"
+  },
+  {
+    "title": "Seine",
+    "src": "photos/paris/seine.jpg"
+  },
+  {
+    "title": "Louvre",
+    "src": "photos/paris/louvre.jpg"
+  }
+]
