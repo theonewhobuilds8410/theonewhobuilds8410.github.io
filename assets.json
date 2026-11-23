@@ -1,14 +1,20 @@
-"gaussians": [
-  {
-    "title": "La France Victorieuse",
-    "src": "gaussians/paris/Statue-spz.spz"
-  },
-  {
-    "title": "Seine",
-    "src": "photos/paris/seine.jpg"
-  },
-  {
-    "title": "Louvre",
-    "src": "photos/paris/louvre.jpg"
-  }
-]
+{
+  "albums": [],
+  "photos": [
+    {
+      "title": "Seine",
+      "src": "photos/paris/seine.jpg"
+    },
+    {
+      "title": "Louvre",
+      "src": "photos/paris/louvre.jpg"
+    }
+  ],
+  "videos": [],
+  "gaussians": [
+    {
+      "title": "La France Victorieuse",
+      "src": "gaussians/paris/Statue-spz.spz"
+    }
+  ]
+}
