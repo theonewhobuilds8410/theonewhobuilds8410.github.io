@@ -29,35 +29,29 @@ const fallbackPhotos = [
 ];
 
 // Spark imports are configured here so index.html does not need changing.
-function loadSpark() {
+
+async function loadSpark() {
   if (sparkImportPromise) return sparkImportPromise;
 
   sparkImportPromise = (async () => {
-    if (!document.querySelector('script[type="importmap"]')) {
-      const map = document.createElement('script');
-      map.type = 'importmap';
+    const THREE = await import(
+      'https://cdn.jsdelivr.net/npm/three@0.180.0/build/three.module.js'
+    );
 
-      map.textContent = JSON.stringify({
-        imports: {
-          "three": "https://cdn.jsdelivr.net/npm/three@0.180.0/build/three.module.js",
-          "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.180.0/examples/jsm/",
-          "@sparkjsdev/spark": "https://sparkjs.dev/releases/spark/2.4.0/spark.module.js"
-        }
-      });
+    const Spark = await import(
+      'https://sparkjs.dev/releases/spark/2.4.0/spark.module.js'
+    );
 
-      document.head.appendChild(map);
-    }
+    const { OrbitControls } = await import(
+      'https://cdn.jsdelivr.net/npm/three@0.180.0/examples/jsm/controls/OrbitControls.js'
+    );
 
-    const [THREE, Spark] = await Promise.all([
-      import('three'),
-      import('@sparkjsdev/spark')
-    ]);
-
-    return { THREE, Spark };
+    return { THREE, Spark, OrbitControls };
   })();
 
   return sparkImportPromise;
 }
+
 
 async function loadManifest() {
   try {
