@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#f3f5fa">
+<title>Aérin — Memories</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="app">
+  <aside class="sidebar">
+    <a class="brand" href="#" aria-label="Aérin home"><span class="cloud">☁</span><span>Aérin</span></a>
+    <nav class="nav">
+      <button class="navitem active" data-view="library"><span class="ico">▧</span>Library</button>
+      <button class="navitem" data-view="albums"><span class="ico">▢</span>Albums</button>
+      <button class="navitem" data-view="search"><span class="ico">⌕</span>Search</button>
+    </nav>
+    <div class="side-divider"></div>
+    <div class="side-label">Places <span>⌄</span></div>
+    <div id="places" class="places"></div>
+    <div class="sidebar-bottom"><button class="navitem settings"><span class="ico">⚙</span>Settings</button></div>
+  </aside>
+  <header class="topbar"><div class="mobile-brand">☁ Aérin</div><button class="profile" title="Profile">●</button></header>
+  <main class="main" id="main">
+    <section class="hero">
+      <div class="hero-shade"></div>
+      <div class="hero-text"><h1 id="greeting">Good afternoon.</h1><p>Your memories, all in one place.</p></div>
+    </section>
+    <section class="section album-section">
+      <div class="section-head"><h2>Albums</h2><button class="seeall" data-view="albums">See All <span>›</span></button></div>
+      <div id="album-grid" class="album-grid"></div>
+    </section>
+    <section class="section">
+      <div class="section-head"><h2>Photos</h2><button class="seeall" data-view="photos">See All <span>›</span></button></div>
+      <div id="photo-grid" class="photo-grid"></div>
+    </section>
+    <section class="section splat-section">
+      <div class="section-head"><h2>Spatial memories</h2><button class="seeall" data-view="gaussians">See All <span>›</span></button></div>
+      <div id="splat-grid" class="splat-grid"></div>
+    </section>
+    <section class="section videos-section">
+      <div class="section-head"><h2>Videos</h2><button class="seeall" data-view="videos">See All <span>›</span></button></div>
+      <div id="video-grid" class="photo-grid"></div>
+    </section>
+    <footer>Private memories. A place to keep them.</footer>
+  </main>
+</div>
+<div id="modal" class="modal hidden"><button class="close" id="close-modal">×</button><div id="modal-content"></div></div>
+<script src="app.js"></script>
+</body></html>
