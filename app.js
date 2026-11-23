@@ -334,7 +334,7 @@ async function loadSplatScene(src) {
   let canvas;
 
   try {
-    ({ THREE, Spark } = await loadSpark());
+    ({ THREE, Spark, OrbitControls } = await loadSpark());
 
     const shell = $('#viewer');
 
@@ -380,9 +380,6 @@ async function loadSplatScene(src) {
     spark = new Spark.SparkRenderer({ renderer });
     scene.add(spark);
 
-    const { OrbitControls } = await import(
-      'three/addons/controls/OrbitControls.js'
-    );
 
     controls = new OrbitControls(camera, canvas);
     controls.enableDamping = true;
