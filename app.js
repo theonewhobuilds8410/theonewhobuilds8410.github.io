@@ -30,27 +30,27 @@ const fallbackPhotos = [
 
 // Spark imports are configured here so index.html does not need changing.
 
+
 async function loadSpark() {
   if (sparkImportPromise) return sparkImportPromise;
 
   sparkImportPromise = (async () => {
-    const THREE = await import(
-      'https://cdn.jsdelivr.net/npm/three@0.180.0/build/three.module.js'
-    );
+    const [THREE, Spark, controls] = await Promise.all([
+      import('three'),
+      import('@sparkjsdev/spark'),
+      import('three/addons/controls/OrbitControls.js')
+    ]);
 
-    const Spark = await import(
-      'https://sparkjs.dev/releases/spark/2.4.0/spark.module.js'
-    );
-
-    const { OrbitControls } = await import(
-      'https://cdn.jsdelivr.net/npm/three@0.180.0/examples/jsm/controls/OrbitControls.js'
-    );
-
-    return { THREE, Spark, OrbitControls };
+    return {
+      THREE,
+      Spark,
+      OrbitControls: controls.OrbitControls
+    };
   })();
 
   return sparkImportPromise;
 }
+
 
 
 async function loadManifest() {
